@@ -1,0 +1,20 @@
+Wed Aug 24 18:32:03 EDT 2022 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Aug 24 18:32:03 EDT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0182-d1fb-e899-ffffc4e028d5 
+on database directory C:\Users\Patrick Larocque\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\Derby\InventoryManagementSystem\InventoryDB\InventoryDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/Patrick%20Larocque/OneDrive/Documents/NetBeansProjects/InventoryManagementSystem/Derby/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.2+8-LTS-86
+user.dir=C:\Users\Patrick Larocque\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\Derby\db-derby-10.14.2.0-bin
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Patrick Larocque\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\Derby\InventoryManagementSystem\InventoryDB
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Aug 24 21:15:01 EDT 2022: Shutting down Derby engine
+----------------------------------------------------------------
+Wed Aug 24 21:15:01 EDT 2022:
+Shutting down instance a816c00e-0182-d1fb-e899-ffffc4e028d5 on database directory C:\Users\Patrick Larocque\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\Derby\InventoryManagementSystem\InventoryDB\InventoryDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+----------------------------------------------------------------
