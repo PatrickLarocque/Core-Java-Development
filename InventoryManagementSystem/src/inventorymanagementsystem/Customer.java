@@ -38,6 +38,7 @@ public class Customer extends javax.swing.JFrame {
         customerBottomPanel = new javax.swing.JPanel();
         customerCredits = new javax.swing.JLabel();
         customerBrand = new javax.swing.JLabel();
+        customerMainMenuButton = new javax.swing.JButton();
         customerTablePanel = new javax.swing.JScrollPane();
         customerTable = new javax.swing.JTable();
         customerList = new javax.swing.JLabel();
@@ -45,9 +46,8 @@ public class Customer extends javax.swing.JFrame {
         customerName = new javax.swing.JLabel();
         customerPhone = new javax.swing.JLabel();
         customerAddButton = new javax.swing.JButton();
-        customerEditButton = new javax.swing.JButton();
+        customerUpdateButton = new javax.swing.JButton();
         customerDeleteButton = new javax.swing.JButton();
-        customerMainMenuButton = new javax.swing.JButton();
         customerIDField = new javax.swing.JTextField();
         customerNameField = new javax.swing.JTextField();
         customerPhoneField = new javax.swing.JTextField();
@@ -71,14 +71,14 @@ public class Customer extends javax.swing.JFrame {
         customerTopPanelLayout.setHorizontalGroup(
             customerTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerTopPanelLayout.createSequentialGroup()
-                .addContainerGap(268, Short.MAX_VALUE)
                 .addGroup(customerTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerTopPanelLayout.createSequentialGroup()
-                        .addComponent(customerTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(489, 489, 489))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerTopPanelLayout.createSequentialGroup()
-                        .addComponent(customerHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(266, 266, 266))))
+                    .addGroup(customerTopPanelLayout.createSequentialGroup()
+                        .addGap(318, 318, 318)
+                        .addComponent(customerHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(customerTopPanelLayout.createSequentialGroup()
+                        .addGap(531, 531, 531)
+                        .addComponent(customerTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         customerTopPanelLayout.setVerticalGroup(
             customerTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,28 +102,48 @@ public class Customer extends javax.swing.JFrame {
         customerBrand.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         customerBrand.setText("invSYS");
 
+        customerMainMenuButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
+        customerMainMenuButton.setText("Main Menu");
+        customerMainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                customerMainMenuButtonMouseClicked(evt);
+            }
+        });
+        customerMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customerMainMenuButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout customerBottomPanelLayout = new javax.swing.GroupLayout(customerBottomPanel);
         customerBottomPanel.setLayout(customerBottomPanelLayout);
         customerBottomPanelLayout.setHorizontalGroup(
             customerBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerBottomPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(customerBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(customerBottomPanelLayout.createSequentialGroup()
-                        .addGap(369, 369, 369)
-                        .addComponent(customerCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(customerBottomPanelLayout.createSequentialGroup()
-                        .addGap(493, 493, 493)
-                        .addComponent(customerBrand, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerBottomPanelLayout.createSequentialGroup()
+                        .addComponent(customerBrand, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(427, 427, 427))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerBottomPanelLayout.createSequentialGroup()
+                        .addComponent(customerCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(307, 307, 307)))
+                .addComponent(customerMainMenuButton)
+                .addGap(53, 53, 53))
         );
         customerBottomPanelLayout.setVerticalGroup(
             customerBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerBottomPanelLayout.createSequentialGroup()
+            .addGroup(customerBottomPanelLayout.createSequentialGroup()
                 .addContainerGap(28, Short.MAX_VALUE)
-                .addComponent(customerBrand)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(customerCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addGroup(customerBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerBottomPanelLayout.createSequentialGroup()
+                        .addComponent(customerBrand)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(customerCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerBottomPanelLayout.createSequentialGroup()
+                        .addComponent(customerMainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35))))
         );
 
         customerTable.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
@@ -172,16 +192,16 @@ public class Customer extends javax.swing.JFrame {
             }
         });
 
-        customerEditButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
-        customerEditButton.setText("Edit");
-        customerEditButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        customerUpdateButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
+        customerUpdateButton.setText("Update");
+        customerUpdateButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                customerEditButtonMouseClicked(evt);
+                customerUpdateButtonMouseClicked(evt);
             }
         });
-        customerEditButton.addActionListener(new java.awt.event.ActionListener() {
+        customerUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerEditButtonActionPerformed(evt);
+                customerUpdateButtonActionPerformed(evt);
             }
         });
 
@@ -195,19 +215,6 @@ public class Customer extends javax.swing.JFrame {
         customerDeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customerDeleteButtonActionPerformed(evt);
-            }
-        });
-
-        customerMainMenuButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
-        customerMainMenuButton.setText("Main Menu");
-        customerMainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                customerMainMenuButtonMouseClicked(evt);
-            }
-        });
-        customerMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerMainMenuButtonActionPerformed(evt);
             }
         });
 
@@ -255,20 +262,16 @@ public class Customer extends javax.swing.JFrame {
                         .addGap(86, 86, 86)
                         .addComponent(customerAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(customerEditButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(customerUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(customerDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(customerPanelLayout.createSequentialGroup()
-                        .addGap(192, 192, 192)
-                        .addComponent(customerMainMenuButton)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanelLayout.createSequentialGroup()
-                        .addComponent(customerTablePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 624, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanelLayout.createSequentialGroup()
-                        .addComponent(customerList, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(233, 233, 233))))
+                        .addComponent(customerDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addComponent(customerTablePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(customerList, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(290, 290, 290))
         );
         customerPanelLayout.setVerticalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,7 +283,7 @@ public class Customer extends javax.swing.JFrame {
                 .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(customerPanelLayout.createSequentialGroup()
                         .addComponent(customerTablePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE))
                     .addGroup(customerPanelLayout.createSequentialGroup()
                         .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(customerIDField, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -296,11 +299,9 @@ public class Customer extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(customerAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(customerEditButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(customerUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(customerDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(customerMainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)))
+                        .addGap(93, 93, 93)))
                 .addComponent(customerBottomPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -323,9 +324,9 @@ public class Customer extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_customerAddButtonActionPerformed
 
-    private void customerEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerEditButtonActionPerformed
+    private void customerUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerUpdateButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_customerEditButtonActionPerformed
+    }//GEN-LAST:event_customerUpdateButtonActionPerformed
 
     private void customerDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerDeleteButtonActionPerformed
         // TODO add your handling code here:
@@ -389,22 +390,22 @@ public class Customer extends javax.swing.JFrame {
         customerPhoneField.setText(model.getValueAt(index, 2).toString());
     }//GEN-LAST:event_customerTableMouseClicked
 
-    private void customerEditButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_customerEditButtonMouseClicked
+    private void customerUpdateButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_customerUpdateButtonMouseClicked
         if (customerIDField.getText().isEmpty() || customerNameField.getText().isEmpty() || customerPhoneField.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Missing Information. Please fill out all required fields.");
         } else {
             try {
                 connection = DriverManager.getConnection("jdbc:derby://localhost:1527/InventoryDB", "sa", "admin");
                 String updateQuery = "UPDATE SA.CUSTOMER SET Customer_Name = '" + customerNameField.getText() + "', Customer_Phone = '" + customerPhoneField.getText() + "' WHERE Customer_ID = " + customerIDField.getText();
-                Statement add = connection.createStatement();
-                add.executeUpdate(updateQuery);
+                Statement update = connection.createStatement();
+                update.executeUpdate(updateQuery);
                 JOptionPane.showMessageDialog(this, "Customers sucessfully modified.");
                 displayCustomers();
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
         }    
-    }//GEN-LAST:event_customerEditButtonMouseClicked
+    }//GEN-LAST:event_customerUpdateButtonMouseClicked
 
     private void customerMainMenuButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_customerMainMenuButtonMouseClicked
         new MainMenu().setVisible(true);
@@ -442,7 +443,6 @@ public class Customer extends javax.swing.JFrame {
     private javax.swing.JLabel customerBrand;
     private javax.swing.JLabel customerCredits;
     private javax.swing.JButton customerDeleteButton;
-    private javax.swing.JButton customerEditButton;
     private javax.swing.JLabel customerHeader;
     private javax.swing.JLabel customerID;
     private javax.swing.JTextField customerIDField;
@@ -457,5 +457,6 @@ public class Customer extends javax.swing.JFrame {
     private javax.swing.JScrollPane customerTablePanel;
     private javax.swing.JLabel customerTitle;
     private javax.swing.JPanel customerTopPanel;
+    private javax.swing.JButton customerUpdateButton;
     // End of variables declaration//GEN-END:variables
 }

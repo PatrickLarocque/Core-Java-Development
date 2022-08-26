@@ -65,10 +65,10 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(mainBottomPanelLayout.createSequentialGroup()
                 .addGroup(mainBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainBottomPanelLayout.createSequentialGroup()
-                        .addGap(488, 488, 488)
+                        .addGap(459, 459, 459)
                         .addComponent(mainBrand, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(mainBottomPanelLayout.createSequentialGroup()
-                        .addGap(365, 365, 365)
+                        .addGap(337, 337, 337)
                         .addComponent(mainCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -77,9 +77,9 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainBottomPanelLayout.createSequentialGroup()
                 .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(mainBrand)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(mainCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
+                .addGap(23, 23, 23))
         );
 
         mainTopPanel.setBackground(new java.awt.Color(66, 68, 74));
@@ -99,13 +99,12 @@ public class MainMenu extends javax.swing.JFrame {
         mainTopPanelLayout.setHorizontalGroup(
             mainTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainTopPanelLayout.createSequentialGroup()
-                .addGroup(mainTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainTopPanelLayout.createSequentialGroup()
-                        .addGap(480, 480, 480)
-                        .addComponent(mainTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mainTopPanelLayout.createSequentialGroup()
-                        .addGap(263, 263, 263)
-                        .addComponent(mainHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(mainHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(237, 237, 237))
+            .addGroup(mainTopPanelLayout.createSequentialGroup()
+                .addGap(453, 453, 453)
+                .addComponent(mainTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainTopPanelLayout.setVerticalGroup(
@@ -150,7 +149,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(mainProductsPanelLayout.createSequentialGroup()
                         .addGap(16, 16, 16)
                         .addComponent(mainProducts, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainProductsPanelLayout.setVerticalGroup(
             mainProductsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,7 +193,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(mainCustomersPanelLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(mainCustomers, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainCustomersPanelLayout.setVerticalGroup(
             mainCustomersPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,7 +237,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(mainCategoriesPanelLayout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(mainCategories, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainCategoriesPanelLayout.setVerticalGroup(
             mainCategoriesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -282,7 +281,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(mainUsersPanelLayout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(mainUsersIcon)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainUsersPanelLayout.setVerticalGroup(
             mainUsersPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -331,8 +330,8 @@ public class MainMenu extends javax.swing.JFrame {
         mainOrdersPanelLayout.setVerticalGroup(
             mainOrdersPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainOrdersPanelLayout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
-                .addComponent(mainOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(mainOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(mainOrdersIcon)
                 .addGap(39, 39, 39))
@@ -353,21 +352,21 @@ public class MainMenu extends javax.swing.JFrame {
             .addComponent(mainTopPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(mainBottomPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
+                .addGap(49, 49, 49)
                 .addComponent(mainProductsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(14, 14, 14)
                 .addComponent(mainCustomersPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(mainCategoriesPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(mainUsersPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(mainOrdersPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82))
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(491, 491, 491)
+                .addGap(50, 50, 50))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(mainLogoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(473, 473, 473))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -380,9 +379,9 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(mainOrdersPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(mainUsersPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(mainProductsPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(mainLogoutButton)
-                .addGap(50, 50, 50)
+                .addGap(49, 49, 49)
                 .addComponent(mainBottomPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -454,16 +453,16 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_mainUsersPanelMouseReleased
 
     private void mainOrdersPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mainOrdersPanelMouseClicked
-
+        new Order().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_mainOrdersPanelMouseClicked
 
     private void mainOrdersPanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mainOrdersPanelMousePressed
-
+        mainOrdersPanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
     }//GEN-LAST:event_mainOrdersPanelMousePressed
 
     private void mainOrdersPanelMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mainOrdersPanelMouseReleased
-
+        mainOrdersPanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
     }//GEN-LAST:event_mainOrdersPanelMouseReleased
 
     private void mainLogoutButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mainLogoutButtonMouseClicked

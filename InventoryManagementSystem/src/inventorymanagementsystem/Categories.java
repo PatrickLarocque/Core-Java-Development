@@ -38,6 +38,7 @@ public class Categories extends javax.swing.JFrame {
         categoryBottomPanel = new javax.swing.JPanel();
         categoryCredits = new javax.swing.JLabel();
         categoryBrand = new javax.swing.JLabel();
+        categoryMainMenuButton = new javax.swing.JButton();
         categoryTablePanel = new javax.swing.JScrollPane();
         categoryTable = new javax.swing.JTable();
         categoryList = new javax.swing.JLabel();
@@ -46,7 +47,6 @@ public class Categories extends javax.swing.JFrame {
         categoryAddButton = new javax.swing.JButton();
         categoryEditButton = new javax.swing.JButton();
         categoryDeleteButton = new javax.swing.JButton();
-        categoryMainMenuButton = new javax.swing.JButton();
         categoryIDField = new javax.swing.JTextField();
         categoryNameField = new javax.swing.JTextField();
 
@@ -69,14 +69,13 @@ public class Categories extends javax.swing.JFrame {
         categoryTopPanelLayout.setHorizontalGroup(
             categoryTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(categoryTopPanelLayout.createSequentialGroup()
-                .addContainerGap(268, Short.MAX_VALUE)
-                .addGroup(categoryTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryTopPanelLayout.createSequentialGroup()
-                        .addComponent(categoryTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(489, 489, 489))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryTopPanelLayout.createSequentialGroup()
-                        .addComponent(categoryHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(266, 266, 266))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(categoryHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(318, 318, 318))
+            .addGroup(categoryTopPanelLayout.createSequentialGroup()
+                .addGap(544, 544, 544)
+                .addComponent(categoryTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         categoryTopPanelLayout.setVerticalGroup(
             categoryTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,28 +99,48 @@ public class Categories extends javax.swing.JFrame {
         categoryBrand.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         categoryBrand.setText("invSYS");
 
+        categoryMainMenuButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
+        categoryMainMenuButton.setText("Main Menu");
+        categoryMainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                categoryMainMenuButtonMouseClicked(evt);
+            }
+        });
+        categoryMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                categoryMainMenuButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout categoryBottomPanelLayout = new javax.swing.GroupLayout(categoryBottomPanel);
         categoryBottomPanel.setLayout(categoryBottomPanelLayout);
         categoryBottomPanelLayout.setHorizontalGroup(
             categoryBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(categoryBottomPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(categoryBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(categoryBottomPanelLayout.createSequentialGroup()
-                        .addGap(369, 369, 369)
-                        .addComponent(categoryCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(categoryBottomPanelLayout.createSequentialGroup()
-                        .addGap(493, 493, 493)
-                        .addComponent(categoryBrand, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryBottomPanelLayout.createSequentialGroup()
+                        .addComponent(categoryBrand, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(426, 426, 426))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryBottomPanelLayout.createSequentialGroup()
+                        .addComponent(categoryCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(306, 306, 306)))
+                .addComponent(categoryMainMenuButton)
+                .addGap(48, 48, 48))
         );
         categoryBottomPanelLayout.setVerticalGroup(
             categoryBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryBottomPanelLayout.createSequentialGroup()
+            .addGroup(categoryBottomPanelLayout.createSequentialGroup()
                 .addContainerGap(28, Short.MAX_VALUE)
-                .addComponent(categoryBrand)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(categoryCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addGroup(categoryBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryBottomPanelLayout.createSequentialGroup()
+                        .addComponent(categoryBrand)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(categoryCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryBottomPanelLayout.createSequentialGroup()
+                        .addComponent(categoryMainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35))))
         );
 
         categoryTable.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
@@ -192,19 +211,6 @@ public class Categories extends javax.swing.JFrame {
             }
         });
 
-        categoryMainMenuButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
-        categoryMainMenuButton.setText("Main Menu");
-        categoryMainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                categoryMainMenuButtonMouseClicked(evt);
-            }
-        });
-        categoryMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryMainMenuButtonActionPerformed(evt);
-            }
-        });
-
         categoryIDField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
         categoryIDField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -242,18 +248,14 @@ public class Categories extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(categoryEditButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(categoryDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(categoryPanelLayout.createSequentialGroup()
-                        .addGap(192, 192, 192)
-                        .addComponent(categoryMainMenuButton)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(categoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryPanelLayout.createSequentialGroup()
-                        .addComponent(categoryTablePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 624, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryPanelLayout.createSequentialGroup()
-                        .addComponent(categoryList, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(233, 233, 233))))
+                        .addComponent(categoryDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addComponent(categoryTablePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, categoryPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(categoryList, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(289, 289, 289))
         );
         categoryPanelLayout.setVerticalGroup(
             categoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,9 +282,7 @@ public class Categories extends javax.swing.JFrame {
                             .addComponent(categoryAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(categoryEditButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(categoryDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(categoryMainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)))
+                        .addGap(93, 93, 93)))
                 .addComponent(categoryBottomPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
