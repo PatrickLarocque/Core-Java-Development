@@ -57,7 +57,7 @@ public class Categories extends javax.swing.JFrame {
         categoryTitle.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
         categoryTitle.setForeground(new java.awt.Color(255, 255, 255));
         categoryTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        categoryTitle.setText("User Menu");
+        categoryTitle.setText("Category Menu");
 
         categoryHeader.setFont(new java.awt.Font("OCR A Extended", 1, 30)); // NOI18N
         categoryHeader.setForeground(new java.awt.Color(255, 255, 255));
@@ -174,6 +174,7 @@ public class Categories extends javax.swing.JFrame {
                 categoryAddButtonMouseClicked(evt);
             }
         });
+
 
         categoryEditButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         categoryEditButton.setText("Edit");
