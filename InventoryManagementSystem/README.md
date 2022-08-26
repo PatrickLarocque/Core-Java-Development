@@ -21,7 +21,7 @@ Inventory Management System directory uploaded to github at: <https://github.com
 ![ScreenShot](src/inventorymanagementsystem/Assets//invSYSCategoriesMenuSS.jpg)
 ![ScreenShot](src/inventorymanagementsystem/Assets//invSYSUserMenuSS.jpg)
 ![ScreenShot](src/inventorymanagementsystem/Assets//invSYSOrderMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSYSOrderHistoryMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets/invSYSOrderHistorySS.jpg)
 
 ## Insructions
 
