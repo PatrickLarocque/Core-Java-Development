@@ -222,12 +222,12 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="productCredits" min="-2" pref="420" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="306" max="-2" attributes="0"/>
+                              <Component id="productBrand" min="-2" pref="174" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="412" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="productBrand" min="-2" pref="174" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="422" max="-2" attributes="0"/>
+                              <Component id="productCredits" min="-2" pref="420" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="297" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="productMainMenuButton" min="-2" max="-2" attributes="0"/>
