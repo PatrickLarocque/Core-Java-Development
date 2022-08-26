@@ -114,11 +114,6 @@ public class User extends javax.swing.JFrame {
                 userMainMenuButtonMouseClicked(evt);
             }
         });
-        userMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userMainMenuButtonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout userBottomPanelLayout = new javax.swing.GroupLayout(userBottomPanel);
         userBottomPanel.setLayout(userBottomPanelLayout);
@@ -191,22 +186,12 @@ public class User extends javax.swing.JFrame {
                 userAddButtonMouseClicked(evt);
             }
         });
-        userAddButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userAddButtonActionPerformed(evt);
-            }
-        });
 
         userUpdateButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         userUpdateButton.setText("Update");
         userUpdateButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 userUpdateButtonMouseClicked(evt);
-            }
-        });
-        userUpdateButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userUpdateButtonActionPerformed(evt);
             }
         });
 
@@ -217,32 +202,13 @@ public class User extends javax.swing.JFrame {
                 userDeleteButtonMouseClicked(evt);
             }
         });
-        userDeleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userDeleteButtonActionPerformed(evt);
-            }
-        });
+
 
         usernameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        usernameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usernameFieldActionPerformed(evt);
-            }
-        });
 
         userPasswordField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        userPasswordField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userPasswordFieldActionPerformed(evt);
-            }
-        });
 
         userPhoneField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        userPhoneField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userPhoneFieldActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout userPanelLayout = new javax.swing.GroupLayout(userPanel);
         userPanel.setLayout(userPanelLayout);
@@ -324,34 +290,6 @@ public class User extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void userAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userAddButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userAddButtonActionPerformed
-
-    private void userUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userUpdateButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userUpdateButtonActionPerformed
-
-    private void userDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userDeleteButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userDeleteButtonActionPerformed
-
-    private void userMainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userMainMenuButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userMainMenuButtonActionPerformed
-
-    private void usernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_usernameFieldActionPerformed
-
-    private void userPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userPasswordFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userPasswordFieldActionPerformed
-
-    private void userPhoneFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userPhoneFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userPhoneFieldActionPerformed
 
     private void userAddButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userAddButtonMouseClicked
         try {

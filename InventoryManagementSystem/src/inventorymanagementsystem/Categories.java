@@ -106,11 +106,6 @@ public class Categories extends javax.swing.JFrame {
                 categoryMainMenuButtonMouseClicked(evt);
             }
         });
-        categoryMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryMainMenuButtonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout categoryBottomPanelLayout = new javax.swing.GroupLayout(categoryBottomPanel);
         categoryBottomPanel.setLayout(categoryBottomPanelLayout);
@@ -179,22 +174,12 @@ public class Categories extends javax.swing.JFrame {
                 categoryAddButtonMouseClicked(evt);
             }
         });
-        categoryAddButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryAddButtonActionPerformed(evt);
-            }
-        });
 
         categoryEditButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         categoryEditButton.setText("Edit");
         categoryEditButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 categoryEditButtonMouseClicked(evt);
-            }
-        });
-        categoryEditButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryEditButtonActionPerformed(evt);
             }
         });
 
@@ -205,25 +190,10 @@ public class Categories extends javax.swing.JFrame {
                 categoryDeleteButtonMouseClicked(evt);
             }
         });
-        categoryDeleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryDeleteButtonActionPerformed(evt);
-            }
-        });
 
         categoryIDField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        categoryIDField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryIDFieldActionPerformed(evt);
-            }
-        });
 
         categoryNameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        categoryNameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryNameFieldActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout categoryPanelLayout = new javax.swing.GroupLayout(categoryPanel);
         categoryPanel.setLayout(categoryPanelLayout);
@@ -300,30 +270,6 @@ public class Categories extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void categoryAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryAddButtonActionPerformed
-
-    }//GEN-LAST:event_categoryAddButtonActionPerformed
-
-    private void categoryEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryEditButtonActionPerformed
-
-    }//GEN-LAST:event_categoryEditButtonActionPerformed
-
-    private void categoryDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryDeleteButtonActionPerformed
-
-    }//GEN-LAST:event_categoryDeleteButtonActionPerformed
-
-    private void categoryMainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryMainMenuButtonActionPerformed
-
-    }//GEN-LAST:event_categoryMainMenuButtonActionPerformed
-
-    private void categoryIDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryIDFieldActionPerformed
-
-    }//GEN-LAST:event_categoryIDFieldActionPerformed
-
-    private void categoryNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryNameFieldActionPerformed
-
-    }//GEN-LAST:event_categoryNameFieldActionPerformed
 
     private void categoryAddButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_categoryAddButtonMouseClicked
                 try {

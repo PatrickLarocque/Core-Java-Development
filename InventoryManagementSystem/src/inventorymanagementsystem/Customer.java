@@ -109,11 +109,6 @@ public class Customer extends javax.swing.JFrame {
                 customerMainMenuButtonMouseClicked(evt);
             }
         });
-        customerMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerMainMenuButtonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout customerBottomPanelLayout = new javax.swing.GroupLayout(customerBottomPanel);
         customerBottomPanel.setLayout(customerBottomPanelLayout);
@@ -186,22 +181,12 @@ public class Customer extends javax.swing.JFrame {
                 customerAddButtonMouseClicked(evt);
             }
         });
-        customerAddButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerAddButtonActionPerformed(evt);
-            }
-        });
 
         customerUpdateButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         customerUpdateButton.setText("Update");
         customerUpdateButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 customerUpdateButtonMouseClicked(evt);
-            }
-        });
-        customerUpdateButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerUpdateButtonActionPerformed(evt);
             }
         });
 
@@ -212,32 +197,12 @@ public class Customer extends javax.swing.JFrame {
                 customerDeleteButtonMouseClicked(evt);
             }
         });
-        customerDeleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerDeleteButtonActionPerformed(evt);
-            }
-        });
 
         customerIDField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        customerIDField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerIDFieldActionPerformed(evt);
-            }
-        });
 
         customerNameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        customerNameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerNameFieldActionPerformed(evt);
-            }
-        });
 
         customerPhoneField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        customerPhoneField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerPhoneFieldActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout customerPanelLayout = new javax.swing.GroupLayout(customerPanel);
         customerPanel.setLayout(customerPanelLayout);
@@ -319,34 +284,6 @@ public class Customer extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void customerAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerAddButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerAddButtonActionPerformed
-
-    private void customerUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerUpdateButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerUpdateButtonActionPerformed
-
-    private void customerDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerDeleteButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerDeleteButtonActionPerformed
-
-    private void customerMainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerMainMenuButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerMainMenuButtonActionPerformed
-
-    private void customerIDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerIDFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerIDFieldActionPerformed
-
-    private void customerNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerNameFieldActionPerformed
-
-    private void customerPhoneFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerPhoneFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customerPhoneFieldActionPerformed
 
     private void customerAddButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_customerAddButtonMouseClicked
         try {

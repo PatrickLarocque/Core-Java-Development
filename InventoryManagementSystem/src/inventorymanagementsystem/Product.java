@@ -117,11 +117,6 @@ public class Product extends javax.swing.JFrame {
                 productMainMenuButtonMouseClicked(evt);
             }
         });
-        productMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productMainMenuButtonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout productBottomPanelLayout = new javax.swing.GroupLayout(productBottomPanel);
         productBottomPanel.setLayout(productBottomPanelLayout);
@@ -202,22 +197,12 @@ public class Product extends javax.swing.JFrame {
                 productAddButtonMouseClicked(evt);
             }
         });
-        productAddButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productAddButtonActionPerformed(evt);
-            }
-        });
 
         productUpdateButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         productUpdateButton.setText("Update");
         productUpdateButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 productUpdateButtonMouseClicked(evt);
-            }
-        });
-        productUpdateButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productUpdateButtonActionPerformed(evt);
             }
         });
 
@@ -228,39 +213,14 @@ public class Product extends javax.swing.JFrame {
                 productDeleteButtonMouseClicked(evt);
             }
         });
-        productDeleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productDeleteButtonActionPerformed(evt);
-            }
-        });
 
         productIDField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        productIDField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productIDFieldActionPerformed(evt);
-            }
-        });
 
         productNameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        productNameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productNameFieldActionPerformed(evt);
-            }
-        });
 
         productQuantityField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        productQuantityField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productQuantityFieldActionPerformed(evt);
-            }
-        });
 
         productPriceField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        productPriceField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productPriceFieldActionPerformed(evt);
-            }
-        });
 
         productCategoryDropdown.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
 
@@ -269,11 +229,6 @@ public class Product extends javax.swing.JFrame {
         productQuantity.setText("Quanity");
 
         productDescriptionField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        productDescriptionField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productDescriptionFieldActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout productPanelLayout = new javax.swing.GroupLayout(productPanel);
         productPanel.setLayout(productPanelLayout);
@@ -377,38 +332,6 @@ public class Product extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void productAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productAddButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productAddButtonActionPerformed
-
-    private void productDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productDeleteButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productDeleteButtonActionPerformed
-
-    private void productUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productUpdateButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productUpdateButtonActionPerformed
-
-    private void productMainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productMainMenuButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productMainMenuButtonActionPerformed
-
-    private void productIDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productIDFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productIDFieldActionPerformed
-
-    private void productNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productNameFieldActionPerformed
-
-    private void productQuantityFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productQuantityFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productQuantityFieldActionPerformed
-
-    private void productPriceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productPriceFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productPriceFieldActionPerformed
-
     private void productAddButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productAddButtonMouseClicked
         try {
             connection = DriverManager.getConnection("jdbc:derby://localhost:1527/InventoryDB", "sa", "admin");
@@ -479,11 +402,6 @@ public class Product extends javax.swing.JFrame {
         new MainMenu().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_productMainMenuButtonMouseClicked
-
-    private void productDescriptionFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productDescriptionFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productDescriptionFieldActionPerformed
-
     
     public void displayProducts() {
         try {

@@ -256,14 +256,6 @@ public class Order extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderMainMenuButtonMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                orderMainMenuButtonMouseEntered(evt);
-            }
-        });
-        orderMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderMainMenuButtonActionPerformed(evt);
-            }
         });
 
         orderPrintInvoiceButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
@@ -271,14 +263,6 @@ public class Order extends javax.swing.JFrame {
         orderPrintInvoiceButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderPrintInvoiceButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                orderPrintInvoiceButtonMouseEntered(evt);
-            }
-        });
-        orderPrintInvoiceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderPrintInvoiceButtonActionPerformed(evt);
             }
         });
 
@@ -345,40 +329,20 @@ public class Order extends javax.swing.JFrame {
                 orderAddToOrderButtonMouseClicked(evt);
             }
         });
-        orderAddToOrderButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderAddToOrderButtonActionPerformed(evt);
-            }
-        });
 
         orderOrderDate.setFont(new java.awt.Font("Cascadia Code", 0, 14)); // NOI18N
         orderOrderDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         orderOrderDate.setText("Date");
 
         orderCustomerNameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderCustomerNameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderCustomerNameFieldActionPerformed(evt);
-            }
-        });
 
         orderQuantity.setFont(new java.awt.Font("Cascadia Code", 0, 18)); // NOI18N
         orderQuantity.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         orderQuantity.setText("Quantity");
 
         orderQuantityField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderQuantityField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderQuantityFieldActionPerformed(evt);
-            }
-        });
 
         orderProductField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderProductField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderProductFieldActionPerformed(evt);
-            }
-        });
 
         orderProduct.setFont(new java.awt.Font("Cascadia Code", 0, 18)); // NOI18N
         orderProduct.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -391,11 +355,6 @@ public class Order extends javax.swing.JFrame {
                 orderViewOrdersButtonMouseClicked(evt);
             }
         });
-        orderViewOrdersButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderViewOrdersButtonActionPerformed(evt);
-            }
-        });
 
         orderFinalizeOrderButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         orderFinalizeOrderButton.setText("Finalize Order");
@@ -404,22 +363,12 @@ public class Order extends javax.swing.JFrame {
                 orderFinalizeOrderButtonMouseClicked(evt);
             }
         });
-        orderFinalizeOrderButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderFinalizeOrderButtonActionPerformed(evt);
-            }
-        });
 
         orderSearchButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         orderSearchButton.setText("Search");
         orderSearchButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderSearchButtonMouseClicked(evt);
-            }
-        });
-        orderSearchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderSearchButtonActionPerformed(evt);
             }
         });
 
@@ -432,11 +381,6 @@ public class Order extends javax.swing.JFrame {
         orderDate.setText("Date");
 
         orderPriceField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderPriceField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderPriceFieldActionPerformed(evt);
-            }
-        });
 
         orderPrice.setFont(new java.awt.Font("Cascadia Code", 0, 18)); // NOI18N
         orderPrice.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -463,11 +407,6 @@ public class Order extends javax.swing.JFrame {
         orderClearButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderClearButtonMouseClicked(evt);
-            }
-        });
-        orderClearButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderClearButtonActionPerformed(evt);
             }
         });
 
@@ -668,31 +607,10 @@ public class Order extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_orderAddToOrderButtonMouseClicked
 
-    
-    private void orderAddToOrderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderAddToOrderButtonActionPerformed
-
-    }//GEN-LAST:event_orderAddToOrderButtonActionPerformed
-
-    private void orderCustomerNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderCustomerNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderCustomerNameFieldActionPerformed
-
-    private void orderQuantityFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderQuantityFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderQuantityFieldActionPerformed
-
-    private void orderProductFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderProductFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderProductFieldActionPerformed
-
     private void orderViewOrdersButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderViewOrdersButtonMouseClicked
         new OrderHistory().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_orderViewOrdersButtonMouseClicked
-
-    private void orderViewOrdersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderViewOrdersButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderViewOrdersButtonActionPerformed
 
     private void orderFinalizeOrderButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderFinalizeOrderButtonMouseClicked
         if (orderOrderSummaryTable.getRowCount() == 0) {
@@ -722,10 +640,6 @@ public class Order extends javax.swing.JFrame {
             }               
         }    
     }//GEN-LAST:event_orderFinalizeOrderButtonMouseClicked
-
-    private void orderFinalizeOrderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderFinalizeOrderButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderFinalizeOrderButtonActionPerformed
 
     private void orderSearchButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderSearchButtonMouseClicked
         if (orderProductField.getText().isEmpty() && orderCustomerNameField.getText().isEmpty()) {
@@ -765,26 +679,10 @@ public class Order extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_orderSearchButtonMouseClicked
 
-    private void orderSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderSearchButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderSearchButtonActionPerformed
-
-    private void orderPriceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderPriceFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderPriceFieldActionPerformed
-
     private void orderMainMenuButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderMainMenuButtonMouseClicked
         new MainMenu().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_orderMainMenuButtonMouseClicked
-
-    private void orderMainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderMainMenuButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderMainMenuButtonActionPerformed
-
-    private void orderMainMenuButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderMainMenuButtonMouseEntered
-
-    }//GEN-LAST:event_orderMainMenuButtonMouseEntered
 
     private void orderClearButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderClearButtonMouseClicked
         orderCustomerNameField.setText("");
@@ -797,21 +695,9 @@ public class Order extends javax.swing.JFrame {
         displayProducts();
     }//GEN-LAST:event_orderClearButtonMouseClicked
 
-    private void orderClearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderClearButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderClearButtonActionPerformed
-
     private void orderPrintInvoiceButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderPrintInvoiceButtonMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_orderPrintInvoiceButtonMouseClicked
-
-    private void orderPrintInvoiceButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderPrintInvoiceButtonMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderPrintInvoiceButtonMouseEntered
-
-    private void orderPrintInvoiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderPrintInvoiceButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderPrintInvoiceButtonActionPerformed
 
     /**
      * @param args the command line arguments

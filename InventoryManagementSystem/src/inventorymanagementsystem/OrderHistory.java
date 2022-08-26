@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package inventorymanagementsystem;
 
 import java.sql.Connection;
@@ -131,22 +127,12 @@ public class OrderHistory extends javax.swing.JFrame {
                 orderHistoryOrdersButtonMouseClicked(evt);
             }
         });
-        orderHistoryOrdersButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryOrdersButtonActionPerformed(evt);
-            }
-        });
 
         orderHistoryMainMenuButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         orderHistoryMainMenuButton.setText("Main Menu");
         orderHistoryMainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderHistoryMainMenuButtonMouseClicked(evt);
-            }
-        });
-        orderHistoryMainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryMainMenuButtonActionPerformed(evt);
             }
         });
 
@@ -223,36 +209,16 @@ public class OrderHistory extends javax.swing.JFrame {
         }
 
         orderHistoryOrderIDField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderHistoryOrderIDField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryOrderIDFieldActionPerformed(evt);
-            }
-        });
 
         orderHistoryProductNameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderHistoryProductNameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryProductNameFieldActionPerformed(evt);
-            }
-        });
 
         orderHistoryCustomerNameField.setFont(new java.awt.Font("Cascadia Code", 0, 16)); // NOI18N
-        orderHistoryCustomerNameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryCustomerNameFieldActionPerformed(evt);
-            }
-        });
 
         orderHistorySearchButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         orderHistorySearchButton.setText("Search");
         orderHistorySearchButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderHistorySearchButtonMouseClicked(evt);
-            }
-        });
-        orderHistorySearchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistorySearchButtonActionPerformed(evt);
             }
         });
 
@@ -263,22 +229,12 @@ public class OrderHistory extends javax.swing.JFrame {
                 orderHistoryClearButtonMouseClicked(evt);
             }
         });
-        orderHistoryClearButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryClearButtonActionPerformed(evt);
-            }
-        });
 
         orderHistoryDeleteButton.setFont(new java.awt.Font("Cascadia Code", 1, 14)); // NOI18N
         orderHistoryDeleteButton.setText("Delete");
         orderHistoryDeleteButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 orderHistoryDeleteButtonMouseClicked(evt);
-            }
-        });
-        orderHistoryDeleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryDeleteButtonActionPerformed(evt);
             }
         });
 
@@ -376,10 +332,6 @@ public class OrderHistory extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_orderHistoryOrdersButtonMouseClicked
 
-    private void orderHistoryOrdersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryOrdersButtonActionPerformed
-
-    }//GEN-LAST:event_orderHistoryOrdersButtonActionPerformed
-
     private void orderHistoryTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryTableMouseClicked
         DefaultTableModel model = (DefaultTableModel)orderHistoryTable.getModel();
         int index = orderHistoryTable.getSelectedRow();
@@ -388,26 +340,11 @@ public class OrderHistory extends javax.swing.JFrame {
         orderHistoryProductNameField.setText(model.getValueAt(index, 1).toString());
     }//GEN-LAST:event_orderHistoryTableMouseClicked
 
-    private void orderHistoryOrderIDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryOrderIDFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistoryOrderIDFieldActionPerformed
-
-    private void orderHistoryProductNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryProductNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistoryProductNameFieldActionPerformed
-
-    private void orderHistoryCustomerNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryCustomerNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistoryCustomerNameFieldActionPerformed
-
     private void orderHistoryMainMenuButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryMainMenuButtonMouseClicked
         new MainMenu().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_orderHistoryMainMenuButtonMouseClicked
 
-    private void orderHistoryMainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryMainMenuButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistoryMainMenuButtonActionPerformed
 
     private void orderHistorySearchButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistorySearchButtonMouseClicked
         if (orderHistoryOrderIDField.getText().isEmpty() && orderHistoryCustomerNameField.getText().isEmpty() && orderHistoryProductNameField.getText().isEmpty()) {
@@ -463,10 +400,6 @@ public class OrderHistory extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_orderHistorySearchButtonMouseClicked
 
-    private void orderHistorySearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistorySearchButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistorySearchButtonActionPerformed
-
     private void orderHistoryClearButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryClearButtonMouseClicked
         orderHistoryOrderIDField.setText("");
         orderHistoryCustomerNameField.setText("");
@@ -475,10 +408,6 @@ public class OrderHistory extends javax.swing.JFrame {
         model.setRowCount(0);
         displayOrderHistory();
     }//GEN-LAST:event_orderHistoryClearButtonMouseClicked
-
-    private void orderHistoryClearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryClearButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistoryClearButtonActionPerformed
 
     private void orderHistoryDeleteButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orderHistoryDeleteButtonMouseClicked
         if (orderHistoryOrderIDField.getText().isEmpty()) {
@@ -497,10 +426,6 @@ public class OrderHistory extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_orderHistoryDeleteButtonMouseClicked
-
-    private void orderHistoryDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryDeleteButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderHistoryDeleteButtonActionPerformed
 
     /**
      * @param args the command line arguments
