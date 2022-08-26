@@ -6,10 +6,10 @@ Student ID: 0879202
   
 invSYS is an Inventory Management System with full CRUD functionality.  
 Database implementation via Apache Derby emebed drivers.  
-Case base built entirely using core Java.  
-GUI built using java.Swing.   
+Code base written entirely using core Java.  
+GUI built using java.Swing and NetBeans form designer.  
 All icon assets screenshots located in the inventorymanagementsystem/assets folder.    
-Inventory Management System directory uploaded to github at: <https://github.com/PatrickLarocque/Web-Development>  
+Inventory Management System directory uploaded to github at: <https://github.com/PatrickLarocque/Core-Java_Development>  
 
 ## Screenshots
 
