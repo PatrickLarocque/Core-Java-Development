@@ -13,15 +13,15 @@ Inventory Management System directory uploaded to github at: <https://github.com
 
 ## Screenshots
 
-![ScreenShot](src/inventorymanagementsystem/Assets/invSysSplashSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysLoginSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysMainMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysProductMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysCustomerMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysCategoriesMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysUserMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysOrderMenuSS.jpg)
-![ScreenShot](src/inventorymanagementsystem/Assets//invSysOrderHistoryMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets/invSYSSplashSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSLoginSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSMainMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSProductMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSCustomerMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSCategoriesMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSUserMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSOrderMenuSS.jpg)
+![ScreenShot](src/inventorymanagementsystem/Assets//invSYSOrderHistoryMenuSS.jpg)
 
 ## Insructions
 
